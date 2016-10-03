@@ -41,6 +41,16 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'figaro'
+gem 'puma'
+group :development do
+  gem 'capistrano'
+  gem 'capistrano3-puma'
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-rvm'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
